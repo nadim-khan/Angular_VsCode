@@ -1,0 +1,13 @@
+<h1>Hi {{vm.user.firstName}}!</h1>
+<p>Welcome!!</p>
+<h3>All registered users from Team :</h3>
+<ul>
+    <li ng-repeat="user in vm.allUsers">
+        {{user.username}} ({{user.firstName}} {{user.lastName}}) -
+        <a ng-click="vm.deleteUser(user.id)">Delete</a>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p>
+    Enter to Update RMC <a href="#!/login" class="btn btn-primary">Enter</a>
+</p>
