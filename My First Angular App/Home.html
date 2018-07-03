@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <title class="orderedlist">Photoraphs</title>        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <link href="app.css" rel="stylesheet"> 
+        <script src="app.js" type="application/javascript"></script>
+        <script src="Scripts/mainContoller.js" type="application/javascript"></script>
+    </head>
+
+    <body onload="onLoad()" ng-app="angularApp">
+        <div ng-controller="mainController">
+            <header class="container-fluid">
+                <H1>Article on Photography</H1>
+            </header>
+            <nav class="container-fluid">
+                <ul class="nav navbar-inverse navbar-nav">
+                    
+                    <li class="active"><a href="#"></a> Home </li>
+                    <li><a href="https://www.google.co.in/search?q=Amazing%2Bphotography&rlz=1C1CHBF_enIN793IN793&oq=Amazing%2Bphotography&aqs=chrome..69i57.420j0j4&sourceid=chrome&ie=UTF-8tography"></a> Amazing Photography </li>
+                    <li><a href="#contact"></a> Contact us </li>
+                </ul>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                        <aside class="col-sm-3">
+                            <h2 class="title">Types of Photography</h2>
+                            <ul>
+                                <li><a href="www.google.com/search?q=nature+photography"></a>Nature</li>
+                                <li><a href="www.google.com/search?q=object+photography"></a>Object</li>
+                                <li><a href="www.google.com/search?q=wild+life+photography"></a>Wild Life</li>                                    <li><a href="www.google.com/search?q=place+photography"></a>Places</li>
+                            </ul>   
+                        </aside> 
+                    <section class="col-sm-6">  
+                        <div class ="row"  >
+                            <div class="col-sm-8">
+                                <label>First Name </label><input ng-model="user.firstname" type="Text" ng-model-option="{gettersetter: true}"/></br>
+                                
+                                <label>Last Name </label><input ng-model="user.lastname" type="Text" ng-model-option="{gettersetter: true}"/></br>
+                                <label>Full Name </label><span ng-bind="user,fullname()"></span>
+                            </div>
+                        </div>
+                        <div class="row">                
+                            <article>
+                                <h3>Direction</h3></li>
+                                <div class="col-sm-3">
+                                    <img src="images/IMG_9899.JPG"/>
+                                </div>
+                                <div class="col-sm-8">
+                                <p>First of all, you have to consider where your light is coming from. When you’re outdoors, this may seem obvious- you’d think to argue it’s just coming from wherever the sun or moon is located. But it’s not always that simple. Say you’re photographing during the evening for example- your light sources will be multiplied.</p>
+                                <p>There might be street lights, store signs lit up, the moon, a multitude of different light sources, all of which you need to notice and consider.
+                                <p>Additionally, if you’re working midday and it’s cloudy, the sun no longer acts as a sole source. The clouds diffuse that light, making its main direction less evident if not completely impossible to trace.</p>     
+                            </article>
+                            <article>
+                                <h3>Intensity</h3></li>
+                                <div class="col-sm-4">
+                                   <img src="images/IMG_0221.JPG"/>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p>Intensity refers to the relative strength of the light.</p>                             
+                                    <p>This varies according to the output of the light source (Is it an especially bright, sunny day? Is it cloudy like we mentioned before?).</p>                                       
+                                    <p>Intensity will also always depend on the distance between the source and the object it’s illuminating (are you taking an edgy nighttime portrait of a skateboarder in a parking lot? Will they stand directly beneath a street light? Or maybe a bit further away?).</p>
+                                </div>
+                            </article>
+                            <article>
+                                <h3>Quality</h3></li>
+                                <div class="col-sm-4">
+                                    <img src="images/IMG_9835.JPG"/>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p>Have you ever heard photographers describe light as being soft or hard? They’re referring to its quality when they make that distinction.</p>                                       
+                                    <p>Direct light is hard, and it creates a great deal of contrast in your image. This kind of light isn’t always the most common choice for portraits, for example, in which many photographers are just trying to emphasize beauty. However, it is a common pick for a bold, outstanding landscape.</p>
+                                    <p>Diffused light (like light coming through clouds on cloudy days), on the other hand is soft, and it reduces or eliminates shadows.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <h3>Color</h3></li>
+                                <div class="col-sm-4"></div>
+                                <img src="images/IMG_9863.JPG"/>
+                                <p>The final element of light worth considering is its color- and not all light looks the same.</p>
+                                <p>Light varies in color, depending on its source and on any substances through which it passes. Natural sunlight, for example, has a very different look than your camera’s flash, to make one comparison.</p>
+                            </article>
+                        </div>
+                    </section>
+                    
+                    <aside class="col-sm-3">
+                        <h2 class="title">Reach out to our location</h2>
+                        <ul>
+                            <li><a href="home.html"></a>Central park</li>
+                            <li>Disney land </li>
+                            <li>Central park</li>
+                            <li>Disney land </li>
+                        </ul> 
+                    </aside>                
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-3"></div>
+                        <div class="col-sm-6 col-sm-pull-3">
+                            <a name="contact">Contact us </a>
+                            <p>Nadeem Khan</p>
+                            <p>Sunflower garden, Dange Chowk</p>
+                            <p>Pune, 411033</p>
+                        </div>
+                    <div class="col-sm-3">
+                        <p id="badge"></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="container-fluid">
+                <p>copyright © <p> {{ message }} </p></p><p> {{ times }} </p> Digital Photography Review All Rights Reserved.</p>
+                <p>Reproduction in whole or part in any form or medium without specific written permission is prohibited.</p>
+            </footer>
+            
+        </div>
+    </body>
+</html>

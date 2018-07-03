@@ -1,0 +1,37 @@
+header,footer {
+    text-align: center;
+    background-color: #004a4a;
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+}
+logo{
+    height:5%;
+    width:5%;
+}
+aside{
+    padding-top:10px;
+    font-weight: bold;
+}
+.title{
+    color:darkblue;
+}
+#orderedlist{
+    color: darkgreen;
+}
+nav{
+    background-color: #222;
+    color:royalblue;
+}
+section, article{
+    padding:10px;
+    background-color: #eee;
+}
+img{
+    height:10%;
+    width:100%;
+}
+label{
+    padding: o 10px;
+    width :100px;
+}
