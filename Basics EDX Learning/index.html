@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Nady's Pizza</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="./app/scripts/app.js"></script>
+    <script src="./app/scripts/menuController.js"></script>
+    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+</head>
+<style>
+    body {
+        margin-top: 0;
+        margin-bottom: 0;
+       font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    }
+    h1 {
+       
+       font-size: 25px;
+       font-weight: bold;
+       margin-top: 10px;
+       margin-bottom: 6px;
+       color:white;
+        background-color:coral;
+        padding:20px;
+        font-family:"Courier New";
+        
+        background: red; /* For browsers that do not support gradients */
+        background: linear-gradient(to bottom right, black, rgba(72, 255, 0, 0.849)); 
+    }
+    h2,h3{
+        font-size: 25px;
+        font-weight: bold;
+        color:grey;
+        font-family:"Courier New";
+    }
+    .container {
+       background: #eaeaed;
+       margin-bottom: 24px;
+       *zoom: 1;
+       background-color: transparent;
+       background-color:lightblue;
+        padding:40px;
+        font-family:Verdana;
+    }
+    #rcorners {
+    
+    border: 0.5px solid violet;
+    padding: 20px; 
+    
+    
+    }
+ </style>
+
+<body ng-controller="menuController">
+    <div class="container">
+        <h1 align="center">Nady's Pizza</h1>
+
+        <h2>{{Menu.title}}</h2>
+        <table >
+            <tr ng-repeat="dish in model" >
+                <td><label><input type="radio" name="category" ng-click="changeMainDish(dish.name)" /> {{dish.name}}</label></td>
+                <td ><p align="center"> {{dish.price}}</p></td>
+            </tr>
+        </table>
+          <!--  <div>
+                <label><input type="radio" name="category" ng-click="changeMainDish('Cheese Pizza')" /> Cheese Pizza</label>
+            </div>
+            <div>
+                <label><input type="radio" name="category" ng-click="changeMainDish('Pepperoni Pizza')"/> Pepperoni Pizza</label>
+            </div>
+            <div>
+                <label><input type="radio" name="category" ng-click="changeMainDish('Margherita Pizza')"/> Margherita Pizza</label>
+            </div>
+            <div>
+                <label><input type="radio" name="category"ng-click="changeMainDish('BBQ Chicken Pizza')" /> BBQ Chicken Pizza</label>
+            </div>
+            <div>
+                <label><input type="radio" name="category" ng-click="changeMainDish('Combo Pizza')"/> Combo Pizza</label>
+            </div> -->
+        <div>
+            <h3>Selected Item from {{Menu.title}}</h3>
+            <pre id="rcorners">{{mainDish}}</pre>
+        </div>
+        <div>
+            <h3>Special Instuctions (For Kitchen Staff)</h3>
+            <textarea id="rcorners" class="form-control" ng-model="specialInstructions"></textarea>
+        </div>
+        <div>
+            <h3>Order Summary</h3>
+            <pre id="rcorners">{{ mainDish }} - {{ specialInstructions }} </pre>
+        </div>
+    </div>
+</body>
+
+</html>
