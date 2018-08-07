@@ -1,0 +1,41 @@
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+   font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+h1 {
+   
+   font-size: 25px;
+   font-weight: bold;
+   margin-top: 10px;
+   margin-bottom: 6px;
+   color:white;
+    background-color:coral;
+    padding:20px;
+    font-family:"Courier New";
+    
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, black, rgba(72, 255, 0, 0.849)); 
+}
+h2,h3{
+    font-size: 25px;
+    font-weight: bold;
+    color:grey;
+    font-family:"Courier New";
+}
+.container {
+   background: #eaeaed;
+   margin-bottom: 24px;
+   *zoom: 1;
+   background-color: transparent;
+   background-color:lightblue;
+    padding:40px;
+    font-family:Verdana;
+}
+#rcorners {
+
+border: 0.5px solid violet;
+padding: 20px; 
+
+
+}

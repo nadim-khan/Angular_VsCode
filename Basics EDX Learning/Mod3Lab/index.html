@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Nady's Pizza</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="./app/app.js"></script>
+        <script src="./app/pizzaController.js"></script>
+        <link rel="stylesheet" type="text/css" href="./app/style.css">
+</head>
+
+<body ng-controller="pizzaController">
+        <div class="container">
+            <h1>Nady's Pizza2</h1>
+    
+            <h2>{{model.title}}</h2>
+    
+            <h3>Topping Search</h3>
+            <input type="text" class="form-control" ng-model="model.search">
+    
+            <div ng-hide="model.search">
+                Enter the search criteria above.
+            </div>
+    
+            <div ng-show="model.search" ng-repeat="t in model.availableToppings|filter:model.search">
+                <span ng-click="addTopping(t)">{{t}}</span>
+            </div>
+    
+            <h3>Selected Toppings</h3>
+            <div ng-repeat="t in model.toppings">
+                {{t}}
+            </div>
+        </div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="./app/app.js"></script>
+        <script src="./app/pizzaController.js"></script>
+    </body>
+</html>
