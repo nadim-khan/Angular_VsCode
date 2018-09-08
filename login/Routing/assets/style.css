@@ -1,0 +1,56 @@
+﻿.header{
+    background:Black;
+    height:50px;
+    width:1500px;
+    text-align:center;
+    color:azure;
+}
+.tab {
+    height: 15px;
+    background: darkgrey;
+    text-align:right;
+    color:azure;
+}
+.footer {
+    height: 35px;
+    background: Black;
+    text-align: center;
+    color: azure;
+}
+#leftMenu{
+    font-size:20px;
+    height:550px;
+    width:120px;
+    background:grey;
+}
+.mainMenu {
+    height: 550px;
+    width: 1200px;
+    background: lightgrey;
+    text-indent: 50px;
+}
+a {
+    display: block;
+    padding:5px;
+    text-align:center;
+}
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: Blue;
+}
+
+/* mouse over link */
+    a:hover {
+        color: Black;
+        background-color: yellow;
+    }
+
+/* selected link */
+a:active {
+    color: yellow;
+}

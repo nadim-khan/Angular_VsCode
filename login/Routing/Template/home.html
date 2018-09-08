@@ -1,0 +1,14 @@
+﻿<h1>
+    {{message}}
+</h1>
+<div>
+    <p>In this step, you will learn how to create a layout template and how to build an application that has multiple views by adding routing, using an AngularJS module called ngRoute.</p>
+    <ul>
+        <li>When you now navigate to /index.html, you are redirected to /index.html#!/phones and the phone list appears in the browser.</li>
+        <li>When you click on a phone link, the URL changes to that specific phone and the stub of a phone detail page is displayed.</li>
+        <li>Our app is slowly growing and becoming more complex. Prior to this step, the app provided our users with a single view (including the list of all phones), and all of the template code was located in the phone-list.template.html file. The next step in building the application is to add a view that will show detailed information about each of the devices in our list.</li>
+        <li>To add the detailed view, we are going to turn index.html into what we call a "layout template". This is a template that is common for all views in our application. Other "partial templates" are then included into this layout template depending on the current "route" — the view that is currently displayed to the user.</li>
+        <li>Application routes in AngularJS are declared via the $routeProvider, which is the provider of the $route service. This service makes it easy to wire together controllers, view templates, and the current URL location in the browser. Using this feature, we can implement deep linking, which lets us utilize the browser's history (back and forward navigation) and bookmarks.</li>
+        <li>Since we have already learned that components allow us to combine controllers with templates in a modular, testable way, we are going to use components for routing as well. Each route will be associated with a component and that component will be in charge of providing the view template and the controller.</li>
+    </ul>
+</div>

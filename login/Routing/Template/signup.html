@@ -1,0 +1,58 @@
+﻿<div class="container">
+    <h1>New User Registration</h1>
+    <form class="form-horizontal" name="form" novalidate>
+        <div class="form-group">
+            <div class="col-md-2">
+                <label>Username</label>
+            </div>
+            <div class="col-md-5">
+                <input type="text" name="username" class="form-control" ng-model="model.username" required>
+                <div class="alert alert-danger" ng-show="(form.username.$touched || form.$submitted) && form.username.$error.required"> Username is required </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2">
+                <label>Password</label>
+            </div>
+            <div class="col-md-5">
+                <input type="password" name="password" class="form-control" ng-model="model.password" required>
+                <div class="alert alert-danger" ng-show="(form.password.$touched || form.$submitted) && form.password.$error.required">Password is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2">
+                <label>Name</label>
+            </div>
+            <div class="col-md-5">
+                <input type="text" name="name" class="form-control" ng-model="model.name" required>
+                <div class="alert alert-danger" ng-show="(form.name.$touched || form.$submitted) && form.name.$error.required"> Name is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2">
+                <label>Phone Number</label>
+            </div>
+            <div class="col-md-5">
+                <input type="number" name="phone" class="form-control" ng-model="model.phone" ng-required="true">
+                <div class="alert alert-danger" ng-show="(form.phone.$touched || form.$submitted) && form.phone.$error.required"> Phone is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2">
+                <label>Email Address</label>
+            </div>
+            <div class="col-md-5">
+                <input type="email" name="emailAddress" class="form-control" ng-model="model.email" ng-required="true">
+                <div class="alert alert-danger" ng-show="(form.emailAddress.$touched || form.$submitted) && form.emailAddress.$error.required">Email Address is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-5">
+                <input type="submit" value="Submit" class="btn btn-primary" ng-click="submit(model)" ng-disabled="form.$invalid" />
+                <button class="btn btn-default" ng-click="reset()">Reset</button>
+            </div>
+        </div>
+    </form>        
+</div>
+
+  
